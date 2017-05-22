@@ -22,5 +22,8 @@ angular.module('reviewsApp').config(function($locationProvider, $routeProvider) 
     .when('/review', {
         templateUrl: 'templates/review.html',
         controller: 'ReviewController'
+    })
+    .when('/pleaseregister', {
+        templateUrl: 'templates/please-register.html',
     });
 });
