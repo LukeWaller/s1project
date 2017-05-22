@@ -4,15 +4,15 @@
 
 ### What is this app for?
  
-This is a Reviews web app. It helps users find out about more about products that they are interested by displaying reviews of the products.It also allows users to submit there own reviews based on there own experience of the product.
+This is a Reviews web app project for stream one. It helps users find out about more about products that they are interested by displaying reviews of the products.It also allows users to submit there own reviews based on there own experience of the product.This project displays the skills i have learnt throught stream one.
  
 ### What does it do?
  
-This app will allow users to register and login. Once the users have done that, they will have access to the websites reviews page,view existing reviews, submit there own reviews and then logout.
+This reviews app will allow users to register and login. Once the users have done that, they will have access to the websites reviews page,view existing reviews, submit there own reviews and then logout.
  
 ### How does it work
  
-This app uses JSON Web Tokens to authenticate users and keep them logged in. All the data is consumed from an API hosted on Heroku using AngularJS. The site is styled with Bootstrap.
+This app uses JSON Web Tokens to authenticate users and keep them logged in. This app also uses local storage to store any review created. Some if the data is consumed from an API hosted on Heroku using AngularJS. The site is styled with Bootstrap.
  
 ## Features
  
@@ -38,6 +38,7 @@ This app uses JSON Web Tokens to authenticate users and keep them logged in. All
  
 ## Contributing
   -w3schools has been a good refrence site to refresh different codes and methods.
+  
   
  
 ### Getting the code up and running
