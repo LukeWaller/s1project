@@ -3,30 +3,30 @@ angular.module('reviewsApp', ['ngRoute', 'RouteControllers', 'UserService', 'ang
 angular.module('reviewsApp').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
     
-    $routeProvider.when('/s1project', {
+    $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/accounts/register', {
+    .when('/s1project/accounts/register', {
         templateUrl: 'templates/register.html',
         controller: 'RegisterController'
     })
-    .when('/accounts/login', {
+    .when('/s1project/accounts/login', {
         templateUrl: 'templates/login.html',
         controller: 'LoginController'
     })
-    .when('/accounts/logout', {
+    .when('/s1project/accounts/logout', {
         templateUrl: 'templates/logout.html',
         controller: 'LogoutController'
     })
-    .when('/review', {
+    .when('/s1project/review', {
         templateUrl: 'templates/review.html',
         controller: 'ReviewController'
     })
-    .when('/pleaseregister', {
+    .when('/s1project/pleaseregister', {
         templateUrl: 'templates/please-register.html',
     })
-     .when('/aboutus', {
+     .when('/s1project/aboutus', {
         templateUrl: 'templates/about.html',
         controller: 'AboutController'
     });
