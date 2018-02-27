@@ -2,8 +2,8 @@ angular.module('RouteControllers', [])
     .controller('HomeController', function($scope) {
         $scope.title = "Welcome To Waller Reviews!"
     })
-    .controller('RegisterController', function($scope, UserAPIService, store) {
-        $scope.registrationUser = {};
+    .controller('RegisterController', function($scope, $location, UserAPIService, store) {
+        $scope.registrationUser = {}; 
         var URL = "https://morning-castle-91468.herokuapp.com/";
 
         $scope.login = function() {
@@ -11,6 +11,7 @@ angular.module('RouteControllers', [])
                 $scope.token = results.data.token;
                 store.set('username', $scope.registrationUser.username);
                 store.set('authToken', $scope.token);
+                $location.path("/review");
             }).catch(function(err) {
                 console.log(err);
             })
@@ -23,11 +24,11 @@ angular.module('RouteControllers', [])
 
                 UserAPIService.callAPI(URL + "accounts/register/", $scope.registrationUser).then(function(results) {
                     $scope.data = results.data;
-                    alert("You have successfully registered to Waller Reviews");
                     $scope.login();
+
                 }).catch(function(err) {
                     console.log(err);
-                    alert("Registration failed, please try again with another username.");
+                    alert("Registration failed, username has already been taken.");
 
                 });
             }
@@ -50,7 +51,8 @@ angular.module('RouteControllers', [])
                     console.log($scope.token);
                     $location.path("/review");
                 }).catch(function(err) {
-                    console.log(err);
+                    console.log(err)
+                    alert("Login failed, the username or password you entered is incorrect.");
                 });
           }
         }
@@ -67,37 +69,22 @@ angular.module('RouteControllers', [])
         
         $scope.authToken = store.get('authToken');
         $scope.username = store.get('username');
-        $scope.reviews = {};
 
 
         if (!store.get('authToken')) {
             $location.path("/pleaseregister");
         }
+        
+    })
 
-        if (store.get('review')) {
-            $scope.reviews.id = 1;
-            $scope.reviews.title = store.get('title');
-            $scope.reviews.description = store.get('review');
-            $scope.reviews.username = store.get('revusername');
-            console.log($scope.reviews);
-        }
-
-
-         $scope.submitForm = function() {
-            if ($scope.reviewForm.$valid) {
-                $scope.review.title = $scope.review.title;
-                $scope.review.description = $scope.review.description;
-                $scope.review.username = $scope.review.username;
-
-                console.log($scope.review.username, $scope.review.title);
-                alert("You have successfully created a review");
-
-                store.set('id', 1);
-                store.set('title', $scope.review.title);
-                store.set('review', $scope.review.description);
-                store.set('revusername', $scope.review.username);
-
+     .controller('AboutController', function($scope){
+        $scope.submitForm = function() {
+            if ($scope.contactForm.$valid) {
+                alert('Thank you for your query '+ $scope.contact.name + ', We will get back to you asap');
+            }
+            else {
+                alert('Please complete the form correctly')
             }
         }
-    });
+     });
     

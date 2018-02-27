@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>About Us</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/creative.css">
+
+</head>
+
+<body>
+
+	<div id="aboutSection" class="col-md-6">
+        <h1 id="aboutTitle">About</h1>
+			<div id="aboutBio">
+				<img id="aboutBanner" src="../img/bannerabout3.png">
+					<p>Welcome to Waller Reviews.We are a product review based company that strives to ensure acurate and fair experiences based on proffesional opinion displayed in a easily and ready available fashion. We where Founded in 1969 and will forever be pioneers in product reviewing</p>
+			</div>
+	</div>
+
+	<div id="aboutSection" class="col-md-6">
+        <h1 class="formTitle">Contact Us</h1>
+            <form name="contactForm" data-ng-submit="submitForm()" novalidate>
+                
+              <div class="form-group">
+                <label id="labelTitle">Name</label>
+                  <input type="text" name="name" class="form-control" placeholder="Enter Your Name" data-ng-model="contact.name" required>
+                    <p id="labelFooter" data-ng-show="contactForm.name.$pristine" class="help-block">Your name is required</p>
+              </div>
+
+              <div class="form-group">
+                <label id="labelTitle">Email</label>
+                  <input type="text" name="email" class="form-control" placeholder="Enter Your Email" data-ng-model="contact.email" required>
+                    <p id="labelFooter" data-ng-show="contactForm.email.$pristine" class="help-block">Your email is required</p>
+              </div>
+                        
+              <div class="form-group">
+                <label id="labelTitle">Description</label>
+                  <textarea class="form-control" rows="5" name="description" placeholder="Enter Your message" data-ng-model="contact.description" required></textarea>
+                    <p id="labelFooter" data-ng-show="contactForm.description.$pristine" class="help-block">Your message is required</p>
+              </div>
+             
+              <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+                
+            </form>
+    </div>
+
+</body>
+
+</html>
+
+
+  
+  
+   
+

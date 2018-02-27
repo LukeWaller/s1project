@@ -1,37 +1,34 @@
 	
 	    body{
 		    padding-top:50px;
-	}
+        background-image: url('../img/header3.jpg');
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/header3.jpg');
+        text-align: centre;
+        vertical-align: text-bottom;
+        color: white;
+}
 
 	   .navbar-brand{
-		    position: absolute;
 		    background-image: url('../img/logo.png');
 		    background-position: left;
-		    width: 100%;
+		    width: 240px;
 		    height: 45px;
 		    background-repeat: no-repeat;
 }
 
-	    header {
-		    position: relative;
-  		  width: 100%;
-  		  min-height: 600px;
-  		  background-size: cover;
-  		  background-position: center;
-  		  background-image: url('../img/header3.jpg');
-  		  text-align: centre;
-  		  vertical-align: text-bottom;
-  		  color: white;
-}
-
-      header .header-content {
+      section .header-content{
         position: relative;
         text-align: center;
         padding: 150px 15px 100px;
         width: 100%;
 }
 
-      header .header-content .header-content-inner h1 {
+      section .header-content .header-content-inner h1{
         font-weight: 700;
         font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
         text-transform: uppercase;
@@ -40,14 +37,14 @@
         font-size: 80px;
 }
 
-      header .header-content .header-content-inner p {
+      section .header-content .header-content-inner p{
         font-weight: 300;
         color: rgba(255, 255, 255, 0.7);
         font-size: 40px;
         margin-bottom: 20px;
 }
 
-      .btn-primary {
+      .btn-primary{
   	    color: white;
   	    background-color: #4430ff;
  	      border-color: #4430ff;
@@ -56,38 +53,71 @@
         border-radius: 40px;
 }
 
-      .formTitle {
-        margin-left: 15%;
+      .accountTitle{
+        margin-left: 12%;
+        margin-top: 40px;
+        color: white;
         font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
         font-style: bold;
+        font-size: 75px;
 }
+      /* About page */
 
-      form {
-        margin-top: 20px;
-        margin-left: 100px;
-}
-
-      .reviewHeader{
-        position: relative;
-        width: 100%;
-        min-height: 200px;
-        background-size: cover;
-        background-position: center;
-        background-image: url('../img/reviewbanner.png');
-        margin-top: -20px;
-}
-
-      .reviewHeading{
-        position: relative;
-        text-align: center;
-        padding: 20px 15px 20px;
-        width: 100%;
-        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+      #aboutTitle{
         color: white;
-        font-size: 70px;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        font-style: bold;
+        font-size: 75px;
 }
 
-      #reviewButton { 
+      #aboutBanner{
+        width: 500px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+      #aboutSection{
+        text-align: center;
+        display: inline;
+}
+
+      #aboutBio{
+        font-size: 16px;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+}
+
+      #submitButton{
+        color: white;
+        background-color: #4430ff;
+        border-color: #4430ff;
+        padding: 8px 26px;
+        font-size: 100%;
+        border-radius: 40px;
+}
+
+      /* Review page */
+
+      #reviewTitle{
+        color: white;
+        margin-top: 35px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        font-style: bold;
+        font-size: 80px;
+}
+
+      #reviewIcon{
+        text-align: center;
+        margin-bottom: 20px;
+        display: inline;
+}
+
+      #reviewText{
+        color: white;
+}
+
+      #reviewButton{ 
         color: white;
         background-color: #4430ff;
         border-color: #4430ff;
@@ -96,110 +126,105 @@
         border-radius: 40px;
 }
 
-      th{
-        font-size: 18px;
-        text-align: right;
-}
-
-      .registerHeader{
-        position: relative;
-        width: 100%;
-        min-height: 200px;
-        background-size: cover;
-        background-position: center;
-        background-image: url('../img/reviewbanner.png');
-        margin-top: -20px;
-}
-
-      .registerHeading{
-        position: relative;
-        text-align: center;
-        padding: 50px 15px 10px;
-        width: 100%;
-        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+      #readmoreButton{
         color: white;
-        font-size: 70px;
+        background-color: #4430ff;
+        border-color: #4430ff;
+        font-size: 80%;
+        border-radius: 40px;
 }
 
-      .loginHeader{
-        position: relative;
-        width: 100%;
-        min-height: 200px;
-        background-size: cover;
-        background-position: center;
-        background-image: url('../img/reviewbanner.png');
-        margin-top: -20px;
+      #brandLogo{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        align-items: center;
 }
 
-      .loginHeading{
-        position: relative;
-        text-align: center;
-        padding: 50px 15px 10px;
-        width: 100%;
-        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+      .checked {
+        color: orange;
+}
+
+      /* Registration */
+
+      #registerButton{
         color: white;
-        font-size: 70px;
+        background-color: #4430ff;
+        border-color: #4430ff;
+        padding: 8px 26px;
+        font-size: 100%;
+        border-radius: 40px;
 }
 
-      .logoutHeader{
-        position: relative;
-        width: 100%;
-        min-height: 200px;
-        background-size: cover;
-        background-position: center;
-        background-image: url('../img/reviewbanner.png');
-        margin-top: -20px;
-}
-
-      .logoutHeading{
-        position: relative;
-        text-align: center;
-        padding: 50px 15px 10px;
-        width: 100%;
-        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
-        color: white;
-        font-size: 70px;
-}
-
-      .logoutTitle {
-        margin-left: 30%;
-        margin-top: 5%;
-        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
-        font-style: bold;
-}
-
-      .pleaseRegisterHeader{
-        position: relative;
-        width: 100%;
-        min-height: 200px;
-        background-size: cover;
-        background-position: center;
-        background-image: url('../img/reviewbanner.png');
-        margin-top: -20px;
-}
-
-      .pleaseRegisterHeading{
-        position: relative;
-        text-align: center;
-        padding: 50px 15px 10px;
-        width: 100%;
-        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
-        color: white;
-        font-size: 25px;
-}
-
-      #pleaseRegisterHeading{
-        font-size: 60px;
+      #regClick{
         color: red;
         font-weight: bold;
 }
 
-      #pleaseRegisterButton{
+      #regClick:hover {
+        color: white;
+}
+
+      /* Login */
+
+      #loginButton{
         color: white;
         background-color: #4430ff;
         border-color: #4430ff;
-        padding: 5px 15px;
-        font-size: 15px;
+        padding: 8px 26px;
+        font-size: 100%;
         border-radius: 40px;
 }
+
+      #logClick{
+        color: red;
+        font-weight: bold;
+}
+
+      #logClick:hover {
+        color: white;
+}
+
+      /* Forms */
+
+      .formTitle{
+        color: white;
+        font-family: 'Open Sans', 'Inknut Antiqua', Arial, sans-serif;
+        font-style: bold;
+        font-size: 75px;
+}
+
+      form{
+        margin-top: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+}
+
+      #labelTitle{
+        color: white;
+        font-size: 20px;
+}
+
+      #labelFooter{
+        color: white;
+        font-style: italic;
+        font-size: 12px;
+}
+
+      .form-control{
+        opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
