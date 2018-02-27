@@ -3,7 +3,7 @@ angular.module('reviewsApp', ['ngRoute', 'RouteControllers', 'UserService', 'ang
 angular.module('reviewsApp').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
     
-    $routeProvider.when('/', {
+    $routeProvider.when('/s1project', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
