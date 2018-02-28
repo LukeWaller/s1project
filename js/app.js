@@ -1,4 +1,4 @@
-angular.module('reviewsApp', ['ngRoute', 'RouteControllers', 'UserService', 'angular-storage', 'ReviewDirective']);
+    angular.module('reviewsApp', ['ngRoute', 'RouteControllers', 'UserService', 'angular-storage', 'ReviewDirective']);
 
 angular.module('reviewsApp').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
@@ -7,26 +7,26 @@ angular.module('reviewsApp').config(function($locationProvider, $routeProvider) 
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/s1project/accounts/register', {
+    .when('/accounts/register', {
         templateUrl: 'templates/register.html',
         controller: 'RegisterController'
     })
-    .when('/s1project/accounts/login', {
+    .when('/accounts/login', {
         templateUrl: 'templates/login.html',
         controller: 'LoginController'
     })
-    .when('/s1project/accounts/logout', {
+    .when('/accounts/logout', {
         templateUrl: 'templates/logout.html',
         controller: 'LogoutController'
     })
-    .when('/s1project/review', {
+    .when('/review', {
         templateUrl: 'templates/review.html',
         controller: 'ReviewController'
     })
-    .when('/s1project/pleaseregister', {
+    .when('/pleaseregister', {
         templateUrl: 'templates/please-register.html',
     })
-     .when('/s1project/aboutus', {
+     .when('/aboutus', {
         templateUrl: 'templates/about.html',
         controller: 'AboutController'
     });

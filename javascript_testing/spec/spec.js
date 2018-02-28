@@ -11,8 +11,8 @@ inject(function ($route) {
   expect($route.routes['/'].controller).not.toBe('RegisterController');
   expect($route.routes['/'].templateUrl).not.toEqual('templates/register.html');
 
-  expect($route.routes['/'].controller).toBe('LoginController');
-  expect($route.routes['/'].templateUrl).toEqual('templates/login.html');
+  expect($route.routes['/'].controller).not.toBe('LoginController');
+  expect($route.routes['/'].templateUrl).not.toEqual('templates/login.html');
 
   expect($route.routes['/'].controller).not.toBe('LogoutController');
   expect($route.routes['/'].templateUrl).not.toEqual('templates/logout.html');

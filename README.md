@@ -2,26 +2,33 @@
 
 ## Overview
 
+### Access 
+
+You can view this website by clicking on the following link " https://lukewaller.github.io/s1project "
+
 ### What is this app for?
  
-This is a Reviews web app project for stream one. It helps users find out about more about products that they are interested by displaying reviews of the products.It also allows users to submit there own reviews based on there own experience of the product.This project displays the skills i have learnt throught stream one.
- 
+This is a review website for my stream one project. It helps users find out more about brands that they are interested in by displaying easily accessible reviews to registered users.
+
 ### What does it do?
  
-This reviews app will allow users to register and login. Once the users have done that, they will have access to the websites reviews page,view existing reviews, submit there own reviews and then logout.
+This reviews app will allow users to register and login. Once the users have done that, they will have acccess to the reviews page and will be automatically directed to the reviews page.
  
 ### How does it work
  
-This app uses JSON Web Tokens to authenticate users and keep them logged in. This app also uses local storage to store any review created. Some if the data is consumed from an API hosted on Heroku using AngularJS. The site is styled with Bootstrap.
+This app uses JSON Web Tokens to authenticate users and keep them logged in. Some of the data is consumed from an API hosted on Heroku using AngularJS. Bootstrap was used for the styling of the website.
  
+### Testing
+I tested the routes using jasmine. The authentiation was tested manualy.I also tested accross different browsers and screen sizes 
+
 ## Features
  
 ### User Based Features
     - Registration
     - Login
     - Logout
+
 ### Review Based Features
-    - Creating Reviews
     - Viewing reviews once logged in
  
 ## Tech Used
