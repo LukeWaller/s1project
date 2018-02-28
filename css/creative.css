@@ -61,6 +61,10 @@
         font-style: bold;
         font-size: 75px;
 }
+
+      #homeHeading{
+        color: white;
+}
       /* About page */
 
       #aboutTitle{
@@ -146,6 +150,10 @@
 }
 
       /* Registration */
+
+      #pleaseRegisterHeading{
+        color: white;
+}
 
       #registerButton{
         color: white;
