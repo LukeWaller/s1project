@@ -82,7 +82,7 @@ angular.module('RouteControllers', [])
                 alert('Thank you for your query '+ $scope.contact.name + ', We will get back to you asap');
             }
             else {
-                alert('Please complete the form correctly')
+                alert('Please complete the form correctly');
             }
         }
      });
