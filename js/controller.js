@@ -61,7 +61,6 @@ angular.module('RouteControllers', [])
     .controller('LogoutController', function(store) {
         store.remove('username');
         store.remove('authToken');
-        store.remove('review');
     })
 
 
